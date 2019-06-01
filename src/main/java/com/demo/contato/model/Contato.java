@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.demo.contato.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
-public class Cliente {
+public class Contato {
 	
 	@Id
 	@GeneratedValue(generator = "increment")
@@ -64,7 +64,7 @@ public class Cliente {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Cliente other = (Cliente) obj;
+		Contato other = (Contato) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
