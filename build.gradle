@@ -14,10 +14,11 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-        compile group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.2.5'
+	implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+	implementation "org.springframework.boot:spring-boot-starter-web"
+	runtimeOnly "org.springframework.boot:spring-boot-devtools"
+	testImplementation "org.springframework.boot:spring-boot-starter-test"
+        compile group: 'org.postgresql', name: 'postgresql', version: '42.2.2'
+
 }
 ext.mainClass= 'com.example.demo.DemoApplication'
